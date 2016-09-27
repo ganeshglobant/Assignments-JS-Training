@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+
+<body>
+<h1>Assignment3 - Add Button</h1>
+<div class="btnClass">
+  <button onclick="addBtn(this)">Click me</button>
+</div>
+<script>
+
+function addBtn(ele) { 
+	var currentBtn = document.getElementsByClassName("btnClass")[0];
+  var newButton = ele.cloneNode(true);
+  currentBtn.removeChild(ele);
+  newButton.innerHTML = "Button";
+  currentBtn.appendChild(newButton);
+  
+  var newButton2 = ele.cloneNode(true);
+  newButton2.innerHTML = "Button"
+  currentBtn.appendChild(newButton2)
+}
+</script>
+</body>
+</html>
